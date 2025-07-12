@@ -239,3 +239,25 @@ function initServiceTabs() {
 document.addEventListener('DOMContentLoaded', () => {
     initServiceTabs();
 });
+
+// Update the tab functionality for portfolio
+const portfolioTabs = document.querySelectorAll('.portfolio-tabs .tab-button');
+const portfolioTabPanes = document.querySelectorAll('.tab-pane');
+
+portfolioTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        // Remove active class from all tabs and panes
+        portfolioTabs.forEach(t => t.classList.remove('active'));
+        portfolioTabPanes.forEach(pane => pane.classList.remove('active'));
+        
+        // Add active class to clicked tab
+        tab.classList.add('active');
+        
+        // Show corresponding tab pane
+        const targetTab = tab.getAttribute('data-tab');
+        const targetPane = document.getElementById(targetTab);
+        if (targetPane) {
+            targetPane.classList.add('active');
+        }
+    });
+});

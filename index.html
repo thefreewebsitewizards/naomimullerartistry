@@ -19,10 +19,11 @@
                 <img src="images/logo.jpeg" alt="Naomi Muller Artistry">
                 <span>Naomi Muller</span>
             </div>
-            <ul class="nav-menu">
+             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -85,28 +86,67 @@
         </div>
     </section>
 
-    <!-- Services Section with Tabs -->
+    
+    <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
             <h2 class="section-title">Services</h2>
             <div class="title-underline"></div>
             
-            <!-- Service Tabs -->
-            <div class="service-tabs">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Birthday Parties</h3>
+                    <p>For kids and/or adults who want to be princesses (or fairy queens) for a day.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Weddings</h3>
+                    <p>Alternative brides in particular will love working with Naomi. Let's bring your vision to life for your special day.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>TV & Film</h3>
+                    <p>Producing an independent film in Middle Tennessee? Naomi can create seamless looks for your movie including light SFX with notice.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Special Events</h3>
+                    <p>Got a project in mind not listed here? Reach out anyway. The weirder, the better! Homecoming or Halloween, Naomi has an approach to working with people 1-1 so your needs will be met no matter the occasion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="title-underline"></div>
+            
+            <!-- Portfolio Tabs -->
+            <div class="portfolio-tabs">
                 <button class="tab-button active" data-tab="birthday">
-                    <i class="fas fa-birthday-cake"></i>
                     <span>Birthday Parties</span>
                 </button>
                 <button class="tab-button" data-tab="wedding">
-                    <i class="fas fa-heart"></i>
                     <span>Weddings</span>
                 </button>
                 <button class="tab-button" data-tab="film">
-                    <i class="fas fa-video"></i>
                     <span>TV & Film</span>
                 </button>
                 <button class="tab-button" data-tab="special">
-                    <i class="fas fa-magic"></i>
                     <span>Special Events</span>
                 </button>
             </div>
@@ -293,10 +333,6 @@
                     </div>
                 </div>
             </div>
-
-            <div class="pricing-note">
-                <p>Pricing depends more on time and travel than the look we create so please do not hesitate to ask about rates for what you have in mind. Naomi is highly adaptable and creative.</p>
-            </div>
         </div>
     </section>
 
@@ -336,3 +372,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
